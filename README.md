@@ -4,6 +4,8 @@
 
 A heap‑buffer‑overflow vulnerability exists in the OpenJPEG JPEG2000 decoder bundled with MuPDF. Processing a malicious PDF containing a malformed JPX/JPEG2000 image triggers an out‑of‑bounds write to a heap‑allocated array due to missing index boundary validation, leading to application crash and potential remote code execution.
 
+**MuPDF version**: commit `5bbd04d9aacfe5c0cb9f2fddcee72bdcb230e7e6`
+
 ## Steps to Reproduce
 
 1. Clone the mupdf repository and build it refer to oss-fuzz.
